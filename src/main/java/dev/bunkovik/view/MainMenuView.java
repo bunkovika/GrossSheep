@@ -1,5 +1,4 @@
 package dev.bunkovik.view;
 
-public class Scene {
-
+public class MainMenuView {
 }

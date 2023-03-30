@@ -4,14 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="" />
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="create classes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameOverController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/AView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameOver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Enemy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Fox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,10 +56,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/ČVUT/II semester/PJV/labs/pjv-lab04",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\java\dev\bunkovik" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Gross Sheep" />
@@ -57,7 +98,80 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679948697201</updated>
+      <workItem from="1679948698397" duration="866000" />
+      <workItem from="1679949601643" duration="2292000" />
+      <workItem from="1680105881694" duration="10000" />
+      <workItem from="1680207955406" duration="1835000" />
     </task>
+    <task id="LOCAL-00001" summary="Creation of the classes">
+      <created>1679948855057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679948855057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1679949672512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679949672512</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1679950143503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679950143503</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test2">
+      <created>1679950243661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679950243661</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create classes">
+      <created>1679950819059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679950819059</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation of the classes" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test2" />
+    <MESSAGE value="create classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="create classes" />
   </component>
 </project>
