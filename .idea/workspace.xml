@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="create classes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameOverController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/AView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameOver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameView.java" afterDir="false" />
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="create new classes">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sheep_mainMenu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Enemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Fox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/AView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +54,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/ČVUT/II semester/PJV/labs/pjv-lab04",
+    "last_opened_file_path": "C:/ČVUT/II semester/PJV/Gross Sheep",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -72,10 +68,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\java\dev\bunkovik" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.bunkovik.Main" />
+      <module name="Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.bunkovik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Gross Sheep" />
       <method v="2">
@@ -89,6 +99,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,7 +116,9 @@
       <workItem from="1679948698397" duration="866000" />
       <workItem from="1679949601643" duration="2292000" />
       <workItem from="1680105881694" duration="10000" />
-      <workItem from="1680207955406" duration="1835000" />
+      <workItem from="1680207955406" duration="1996000" />
+      <workItem from="1680271472731" duration="9921000" />
+      <workItem from="1680381596118" duration="2762000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -138,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679950819059</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create new classes">
+      <created>1680213984451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680213984451</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +196,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
     <MESSAGE value="create classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="create classes" />
+    <MESSAGE value="create new classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="create new classes" />
   </component>
 </project>

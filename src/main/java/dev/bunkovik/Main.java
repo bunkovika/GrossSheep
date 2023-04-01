@@ -1,7 +1,22 @@
 package dev.bunkovik;
 
-public class Main {
+import dev.bunkovik.view.MainMenuView;
+import javafx.application.Application;
+import javafx.stage.Stage;
+import java.io.IOException;
+
+public class Main extends Application {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        launch();
+    }
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        MainMenuView mainMenuView = new MainMenuView();
+        mainMenuView.init();
+        stage.setTitle("Gross Sheep");
+        stage.setScene(mainMenuView.getScene());
+        stage.show();
     }
 }

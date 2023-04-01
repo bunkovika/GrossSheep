@@ -1,4 +1,16 @@
 package dev.bunkovik.view;
 
-public class AView {
+import javafx.scene.Scene;
+
+/**
+ * An abstract view class.
+ */
+public abstract class AView {
+
+    protected Scene scene;
+    public Scene getScene() {
+        return scene;
+    }
+    abstract public void init();
 }
+
