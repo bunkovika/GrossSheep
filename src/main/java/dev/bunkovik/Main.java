@@ -1,5 +1,6 @@
 package dev.bunkovik;
 
+import dev.bunkovik.view.GameOver;
 import dev.bunkovik.view.MainMenuView;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -13,10 +14,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        MainMenuView mainMenuView = new MainMenuView();
-        mainMenuView.init();
+//        MainMenuView mainMenuView = new MainMenuView();
+//        mainMenuView.init();
+        GameOver GameOverView = new GameOver();
+        GameOverView.init();
         stage.setTitle("Gross Sheep");
-        stage.setScene(mainMenuView.getScene());
+        stage.setScene(GameOverView.getScene());
         stage.show();
     }
 }
