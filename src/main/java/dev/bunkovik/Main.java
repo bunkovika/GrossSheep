@@ -19,6 +19,7 @@ public class Main extends Application {
         GameOver GameOverView = new GameOver();
         GameOverView.init();
         stage.setTitle("Gross Sheep");
+//        stage.setScene(mainMenuView.getScene());
         stage.setScene(GameOverView.getScene());
         stage.show();
     }
