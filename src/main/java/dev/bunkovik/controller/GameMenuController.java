@@ -1,4 +1,4 @@
 package dev.bunkovik.controller;
 
-public class AController {
+public class GameMenuController {
 }

@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="adding component and design to the game menu">
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="adding design to the InventoryView and creation of the items of the inventory.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameRulesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/MainMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/GameModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/other/StateManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/other/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/other/TileMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/component/game/HPBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Hay.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/AController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameFieldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameOverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameOverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/AView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameOver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/InventoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/InventoryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/InventoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sheep_mainMenu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icon/sheep_mainMenu.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +71,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ČVUT/II semester/PJV/Gross Sheep&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ČVUT/II semester/PJV/Gross Sheep/src/main/resources/tile&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,10 +84,14 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\tile" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources" />
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\tile\unpassable" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\item\1" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\icon" />
-      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\java\dev\bunkovik" />
     </key>
   </component>
@@ -126,7 +146,12 @@
       <workItem from="1680502756391" duration="14000" />
       <workItem from="1680509232269" duration="4303000" />
       <workItem from="1680515696530" duration="135000" />
-      <workItem from="1680528521299" duration="7514000" />
+      <workItem from="1680528521299" duration="7942000" />
+      <workItem from="1680726813251" duration="1416000" />
+      <workItem from="1680777329776" duration="137000" />
+      <workItem from="1680781812300" duration="3444000" />
+      <workItem from="1680791142706" duration="4598000" />
+      <workItem from="1680871915161" duration="7391000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -198,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680515822173</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding design to the InventoryView and creation of the items of the inventory.">
+      <created>1680555576520</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680555576520</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +269,7 @@
     <MESSAGE value="adding hBox and vBox to the GameOver" />
     <MESSAGE value="adding component and design to the game over" />
     <MESSAGE value="adding component and design to the game menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding component and design to the game menu" />
+    <MESSAGE value="adding design to the InventoryView and creation of the items of the inventory." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding design to the InventoryView and creation of the items of the inventory." />
   </component>
 </project>

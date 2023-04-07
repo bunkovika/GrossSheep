@@ -11,7 +11,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-public class InventoryView extends AView {
+public class Inventory extends View {
 
     @Override
     public void init() {
@@ -88,7 +88,6 @@ public class InventoryView extends AView {
         hbox.getChildren().add(vbox);
 
         scene = new Scene(hbox, 1000, 700);
-
     }
 }
 

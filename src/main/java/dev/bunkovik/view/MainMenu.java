@@ -1,5 +1,6 @@
 package dev.bunkovik.view;
 
+import dev.bunkovik.controller.MainMenuController;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -8,8 +9,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.util.ArrayList;
 
-public class MainMenuView extends AView {
-    public MainMenuView() {
+public class MainMenu extends View {
+    public MainMenu(MainMenuController controller) {
+        this.controller = controller;
     }
 
     public void init() {
@@ -19,16 +21,16 @@ public class MainMenuView extends AView {
         ArrayList<Button> buttons = new ArrayList<>();
 
         hBox.setStyle("-fx-background-color: #553A5F; ");
+        hBox.setAlignment(Pos.CENTER);
         // Tile Pane Init
         vBox.setStyle("-fx-background-color: #553A5F; ");
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(30);
 
-        ImageView sheepImage = new ImageView(new Image("sheep_mainMenu.png"));
+        ImageView sheepImage = new ImageView(new Image("icon/sheep_mainMenu.png"));
         sheepImage.setFitHeight(480);
         sheepImage.setFitWidth(470);
-        sheepImage.setTranslateX(50);
-        sheepImage.setTranslateY(120);
+        sheepImage.setTranslateX(-80);
 
         hBox.getChildren().add(sheepImage);
 
@@ -62,10 +64,11 @@ public class MainMenuView extends AView {
             vBox.getChildren().add(button);
 
         }
-        vBox.setTranslateX(120);
         // Add the VBox to the right of the HBox
         hBox.getChildren().add(vBox);
-
+        startGame.setOnMouseClicked(((MainMenuController) controller)::gameStartButtonClickHandler);
+        loadGame.setOnMouseClicked(((MainMenuController) controller)::gameLoadButtonClickHandler);
+        gameRules.setOnMouseClicked(((MainMenuController) controller)::gameLoadButtonClickHandler);
         scene = new Scene(hBox, 1000, 700);
     }
 

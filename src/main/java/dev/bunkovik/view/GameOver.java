@@ -1,5 +1,6 @@
 package dev.bunkovik.view;
 
+import dev.bunkovik.controller.GameOverController;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -10,7 +11,10 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import static javafx.scene.text.TextAlignment.CENTER;
 
-public class GameOver extends AView {
+public class GameOver extends View {
+    public GameOver(GameOverController controller) {
+        this.controller = controller;
+    }
 
     @Override
     public void init() {
@@ -60,7 +64,8 @@ public class GameOver extends AView {
         hbox.setStyle("-fx-background-color: #553A5F; ");
         hbox.setPadding(new Insets(100));
         hbox.getChildren().add(vbox);
-
+        // Attaching Event Listeners
+        button.setOnMouseClicked(((GameOverController) controller)::goToMainMenuButtonClickHandler);
         scene = new Scene(hbox, 1000, 700);
 
     }

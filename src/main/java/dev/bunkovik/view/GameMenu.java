@@ -4,11 +4,10 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+
 import java.util.ArrayList;
 
-public class GameMenu extends AView {
+public class GameMenu extends View {
     public GameMenu() {
     }
 

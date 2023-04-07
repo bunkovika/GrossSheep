@@ -1,11 +1,13 @@
 package dev.bunkovik.view;
 
+import dev.bunkovik.controller.Controller;
 import javafx.scene.Scene;
 
 /**
  * An abstract view class.
  */
-public abstract class AView {
+public abstract class View {
+    protected Controller controller;
 
     protected Scene scene;
     public Scene getScene() {
