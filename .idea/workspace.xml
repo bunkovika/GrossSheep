@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="adding all classes of controller and view. creating State Manager for switching between different states, such as the main menu,  game over screens">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/items/attack/meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/items/protect/Carrot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/items/protect/Wheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tileMap.txt" afterDir="false" />
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="adding tileMap(as a file input) to GameField">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameFieldController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameOverController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/GameRulesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/InventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/controller/MainMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Fox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/GameModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/model/Sheep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/other/StateManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/other/Tile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/other/TileMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameOver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/GameRules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/Inventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/MainMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/View.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/bunkovik/view/component/game/HPBox.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +153,7 @@
       <workItem from="1680791142706" duration="4598000" />
       <workItem from="1680871915161" duration="12483000" />
       <workItem from="1681139557075" duration="17302000" />
-      <workItem from="1681208814969" duration="8511000" />
+      <workItem from="1681208814969" duration="11042000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -265,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680893409502</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding tileMap(as a file input) to GameField">
+      <created>1681217474865</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681217474865</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +287,8 @@
     <MESSAGE value="adding component and design to the game menu" />
     <MESSAGE value="adding design to the InventoryView and creation of the items of the inventory." />
     <MESSAGE value="adding all classes of controller and view. creating State Manager for switching between different states, such as the main menu,  game over screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding all classes of controller and view. creating State Manager for switching between different states, such as the main menu,  game over screens" />
+    <MESSAGE value="adding tileMap(as a file input) to GameField" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding tileMap(as a file input) to GameField" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
