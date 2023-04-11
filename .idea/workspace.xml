@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="adding keyPressedHandler and keyReleasedHandler functions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/config/WindowConfig.java" afterDir="false" />
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="creating WindowConfig">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sheep/sheep_bottom.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ČVUT/II semester/DBS/RachkovskaIevgeniia&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ČVUT/II semester/PJV/Gross Sheep&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -67,11 +68,11 @@
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\tile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\sheep" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\java\bunkovik" />
-      <recent name="C:\Users\vikto\AppData\Roaming\JetBrains\IntelliJIdea2022.3\scratches" />
     </key>
   </component>
   <component name="RunManager" selected="Application.bunkovik.Main">
@@ -154,7 +155,9 @@
       <workItem from="1680791142706" duration="4598000" />
       <workItem from="1680871915161" duration="12483000" />
       <workItem from="1681139557075" duration="17302000" />
-      <workItem from="1681208814969" duration="14700000" />
+      <workItem from="1681208814969" duration="15381000" />
+      <workItem from="1681231809086" duration="2037000" />
+      <workItem from="1681244884369" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -254,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681223667650</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="creating WindowConfig">
+      <created>1681229651597</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681229651597</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +307,8 @@
     <MESSAGE value="adding all classes of controller and view. creating State Manager for switching between different states, such as the main menu,  game over screens" />
     <MESSAGE value="adding tileMap(as a file input) to GameField" />
     <MESSAGE value="adding keyPressedHandler and keyReleasedHandler functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding keyPressedHandler and keyReleasedHandler functions" />
+    <MESSAGE value="creating WindowConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating WindowConfig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
