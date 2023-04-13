@@ -27,7 +27,6 @@ public class StateManager {
 
     public static void startGame(boolean fromSave) {
         currentController = states.get("GAME_FIELD");
-        // Reset All Controllers and Views (in case we start a new game after the game has already been played)
         states.forEach((key, value) -> {
             value.reset();
         });

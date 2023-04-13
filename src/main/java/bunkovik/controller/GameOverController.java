@@ -11,6 +11,7 @@ public class GameOverController extends Controller {
         view = new GameOver(this);
         view.init();
     }
+
     public void toMainMenuButtonClickHandler(MouseEvent e) {
         StateManager.toMainMenu();
     }

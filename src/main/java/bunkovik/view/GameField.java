@@ -1,5 +1,6 @@
 package bunkovik.view;
 
+import bunkovik.config.Tile;
 import bunkovik.config.WindowConfig;
 import bunkovik.controller.GameFieldController;
 import bunkovik.model.entity.Sheep;
@@ -7,6 +8,8 @@ import bunkovik.model.entity.Sprite;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -37,7 +40,7 @@ public class GameField extends View {
         tileMap.setHgap(1.1);
         tileMap.setVgap(1.1);
 
-        File file = new File("tileMap.txt");
+        File file = new File("map.txt");
         ArrayList<String> lines = new ArrayList<>();
 
         try {
@@ -65,9 +68,20 @@ public class GameField extends View {
                 tileMap.add(rect, i, j);
             }
         }
+
         Sprite sheep = new Sheep("sheep");
         sheep.setImage("sheep/sheep_bottom.png");
-        sheep.setPosition(3,0);
+        ImageView sheepImageView = new ImageView(sheep.getImage());
+        sheepImageView.setFitWidth(55);
+        sheepImageView.setFitHeight(60);
+
+        Pane sheepPane = new Pane(sheepImageView);
+        sheepPane.setMaxSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
+
+
+        tileMap.add(sheepPane, 3, 2);
+
+
         vbox.getChildren().add(tileMap);
 
         HBox hbox = new HBox();
@@ -82,4 +96,7 @@ public class GameField extends View {
         scene.setOnKeyReleased(((GameFieldController) controller)::keyReleasedHandler);
     }
 
-}
+    @Override
+    public void render() {
+
+    }}

@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="creating WindowConfig">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sheep/sheep_bottom.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/config/StateManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/config/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/TileMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameFieldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameFieldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameOverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameOverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/GameModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Fox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sheep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameOver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/component/game/HPBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/component/game/HPBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/items/1/wheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/wheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tileMap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +65,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ČVUT/II semester/PJV/Gross Sheep&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/ČVUT/II semester/PJV/Gross Sheep",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\tile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\sheep" />
-      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep" />
-      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src" />
       <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources" />
-      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\java\bunkovik" />
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\tile\A" />
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep" />
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\icon" />
+      <recent name="C:\ČVUT\II semester\PJV\Gross Sheep\src\main\resources\location\1" />
     </key>
   </component>
   <component name="RunManager" selected="Application.bunkovik.Main">
@@ -102,6 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TileMapExample" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TileMapExample" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="scratch" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
@@ -126,6 +153,7 @@
       <list>
         <item itemvalue="Application.bunkovik.Main" />
         <item itemvalue="Java Scratch.scratch" />
+        <item itemvalue="Java Scratch.TileMapExample" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -157,7 +185,9 @@
       <workItem from="1681139557075" duration="17302000" />
       <workItem from="1681208814969" duration="15381000" />
       <workItem from="1681231809086" duration="2037000" />
-      <workItem from="1681244884369" duration="2104000" />
+      <workItem from="1681244884369" duration="3583000" />
+      <workItem from="1681299703562" duration="17776000" />
+      <workItem from="1681380482862" duration="4630000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -264,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681229651597</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="creating WindowConfig">
+      <created>1681248397953</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681248397953</updated>
+    </task>
+    <task id="LOCAL-00017" summary="creating WindowConfig">
+      <created>1681248459857</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681248459857</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

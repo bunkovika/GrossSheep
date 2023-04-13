@@ -11,4 +11,8 @@ public class GameRules extends View {
     public void init() {
 
     }
+    @Override
+    public void render() {
+
+    }
 }

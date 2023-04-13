@@ -68,9 +68,15 @@ public class GameMenu extends View {
     }
 
     @Override
+    public void render() {
+
+    }
+
+    @Override
     public Scene getScene() {
         return super.getScene();
     }
+
 
 }
 

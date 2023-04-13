@@ -23,5 +23,4 @@ public class MainMenuController extends Controller {
     public void gameRulesButtonClickHandler(MouseEvent e) {
         StateManager.startGame(false);
     }
-
 }

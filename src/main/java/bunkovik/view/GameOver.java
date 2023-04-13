@@ -70,9 +70,13 @@ public class GameOver extends View {
         scene = new Scene(hbox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
 
     }
+    @Override
+    public void render() {
 
+    }
     @Override
     public Scene getScene() {
         return super.getScene();
     }
+
 }

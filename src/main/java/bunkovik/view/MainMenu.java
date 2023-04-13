@@ -77,5 +77,9 @@ public class MainMenu extends View {
     public Scene getScene() {
         return super.getScene();
     }
+    @Override
+    public void render() {
+
+    }
 
 }

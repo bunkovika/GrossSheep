@@ -1,7 +1,6 @@
 package bunkovik.view;
 
 import bunkovik.config.WindowConfig;
-import bunkovik.controller.GameOverController;
 import bunkovik.controller.InventoryController;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -94,6 +93,10 @@ public class Inventory extends View {
         hbox.getChildren().add(vbox);
 
         scene = new Scene(hbox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
+    }
+    @Override
+    public void render() {
+
     }
 }
 

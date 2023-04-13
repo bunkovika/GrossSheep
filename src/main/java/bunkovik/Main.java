@@ -4,9 +4,7 @@ import bunkovik.config.StateManager;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
 
 //public class Main  {
 //
@@ -23,7 +21,14 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
+        // setting up stage
+        stage.setTitle("Gross Sheep");
+        stage.setResizable(false);
+        stage.centerOnScreen();
         StateManager.init(stage);
+
+        
 //        MainMenuView mainMenuView = new MainMenuView();
 //        mainMenuView.init();
 //

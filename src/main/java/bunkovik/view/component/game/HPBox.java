@@ -2,10 +2,9 @@ package bunkovik.view.component.game;
 
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import java.util.Observable;
-import java.util.Observer;
 
-public class HPBox implements Observer {
+
+public class HPBox {
     private final Text health;
     public HPBox(double health) {
         this.health = new Text(50, 50, "HP: " + health);
@@ -16,8 +15,7 @@ public class HPBox implements Observer {
         return health;
     }
 
-    @Override
-    public void update(Observable o, Object health) {
-        this.health.setText("HP: " + health);
+    public void update(Object health) {
+
     }
 }

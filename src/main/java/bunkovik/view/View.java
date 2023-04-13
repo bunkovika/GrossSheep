@@ -3,9 +3,9 @@ package bunkovik.view;
 import bunkovik.controller.Controller;
 import javafx.scene.Scene;
 
-/**
- * An abstract view class.
- */
+
+// An abstract view class.
+
 public abstract class View {
     protected Controller controller;
 
@@ -15,5 +15,6 @@ public abstract class View {
     }
 
     abstract public void init();
+    abstract public void render();
 }
 

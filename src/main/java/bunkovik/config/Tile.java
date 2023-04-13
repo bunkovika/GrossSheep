@@ -1,42 +1,41 @@
 package bunkovik.config;
 
+import javafx.scene.Node;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Rectangle;
 
-
-public class Tile {
+public class Tile  {
     private final Image image;
-    private int tileWidth;
-    private int tileHeight;
-    private final boolean acceptable;
+    private final boolean passable;
+    private final double x;
+    private final double y;
 
-    public int getTileWidth() {
-        return tileWidth;
+    public Tile(String imagePath, boolean passable, double x, double y) {
+        this.passable = passable;
+        this.image = new Image(imagePath);
+        this.x = x;
+        this.y = y;
     }
 
-    public int getTileHeight() {
-        return tileHeight;
-    }
-
-    public void setTileWidth(int tileWidth) {
-        this.tileWidth = tileWidth;
-    }
-
-    public void setTileHeight(int tileHeight) {
-        this.tileHeight = tileHeight;
-    }
-
-    public Tile(String imageLink, boolean acceptable) {
-        image = new Image(imageLink);
-        this.acceptable = acceptable;
-    }
     public Image getImage() {
         return image;
     }
-    void setTile(GraphicsContext gc, double x, double y){
+
+    public void render(GraphicsContext gc) {
         gc.drawImage(image, x, y);
     }
-    public boolean isAcceptable() {
-        return acceptable;
+
+    public boolean isPassable() {
+        return passable;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
     }
 }
