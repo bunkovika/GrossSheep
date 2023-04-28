@@ -35,7 +35,7 @@ public abstract class Sprite {
         positionY = y;
     }
     public void render(GraphicsContext gc) {
-        gc.drawImage(image, positionX, positionY);
+//        to change position
     }
     public double getWidth() {
         return width;

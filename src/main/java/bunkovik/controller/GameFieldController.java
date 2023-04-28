@@ -19,7 +19,13 @@ public class GameFieldController extends Controller {
         // Setting Up State
         isOpened = true;
     }
-//    event by the key
+
+    @Override
+    public void tick(double delta) {
+
+    }
+
+    //    event by the key
     public void keyPressedHandler(KeyEvent e) {
         String code = e.getCode().toString();
 

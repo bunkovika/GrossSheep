@@ -1,14 +1,14 @@
 package bunkovik.view;
 
-import bunkovik.config.Tile;
-import bunkovik.config.WindowConfig;
+
+import bunkovik.config.Config;
 import bunkovik.controller.GameFieldController;
 import bunkovik.model.entity.Sheep;
 import bunkovik.model.entity.Sprite;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
+
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -20,13 +20,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GameField extends View {
+    
     public GameField(GameFieldController controller) {
         this.controller = controller;
     }
 
     @Override
     public void init() {
-        VBox vbox = new VBox(10);
+        VBox vbox = new VBox();
         vbox.setAlignment(Pos.CENTER);
         vbox.setStyle("-fx-background-color: #493745; " +
                 "-fx-border-radius: 5; " +
@@ -79,9 +80,7 @@ public class GameField extends View {
         sheepPane.setMaxSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
 
 
-        tileMap.add(sheepPane, 3, 2);
-
-
+        tileMap.add(sheepPane, 3, 0);
         vbox.getChildren().add(tileMap);
 
         HBox hbox = new HBox();
@@ -90,7 +89,7 @@ public class GameField extends View {
         hbox.setPadding(new Insets(100));
         hbox.getChildren().add(vbox);
 
-        scene = new Scene(hbox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
+        scene = new Scene(hbox, Config.getWindowWidth(), Config.getWindowHeight());
         // Adding Event Listeners
         scene.setOnKeyPressed(((GameFieldController) controller)::keyPressedHandler);
         scene.setOnKeyReleased(((GameFieldController) controller)::keyReleasedHandler);
@@ -99,4 +98,5 @@ public class GameField extends View {
     @Override
     public void render() {
 
-    }}
+    }
+}

@@ -23,4 +23,8 @@ public class MainMenuController extends Controller {
     public void gameRulesButtonClickHandler(MouseEvent e) {
         StateManager.startGame(false);
     }
+    @Override
+    public void tick(double delta){
+
+    }
 }

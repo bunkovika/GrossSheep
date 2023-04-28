@@ -1,6 +1,6 @@
 package bunkovik.view;
 
-import bunkovik.config.WindowConfig;
+import bunkovik.config.Config;
 import bunkovik.controller.MainMenuController;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -28,7 +28,7 @@ public class MainMenu extends View {
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(30);
 
-        ImageView sheepImage = new ImageView(new Image("icon/sheep_mainMenu.png"));
+        ImageView sheepImage = new ImageView(new Image("icon/sheep_icon.png"));
         sheepImage.setFitHeight(480);
         sheepImage.setFitWidth(470);
         sheepImage.setTranslateX(-80);
@@ -70,7 +70,7 @@ public class MainMenu extends View {
         startGame.setOnMouseClicked(((MainMenuController) controller)::gameStartButtonClickHandler);
         loadGame.setOnMouseClicked(((MainMenuController) controller)::gameLoadButtonClickHandler);
         gameRules.setOnMouseClicked(((MainMenuController) controller)::gameRulesButtonClickHandler);
-        scene = new Scene(hBox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
+        scene = new Scene(hBox, Config.getWindowWidth(), Config.getWindowHeight());
     }
 
     @Override

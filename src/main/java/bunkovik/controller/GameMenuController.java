@@ -20,5 +20,9 @@ public class GameMenuController extends Controller {
     public void toGameRulesButtonClickHandler(MouseEvent e) {
         StateManager.toGameField();
     }
+    @Override
+    public void tick(double delta){
+
+    }
 
 }

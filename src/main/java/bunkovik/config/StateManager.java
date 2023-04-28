@@ -7,10 +7,11 @@ public class StateManager {
     private static HashMap<String, Controller> states = new HashMap<>();
     private static Controller currentController;
     private static Stage stage;
+    private static GameLoop gameLoop;
 
     public static void init(Stage stage) {
         StateManager.stage = stage;
-        WindowConfig.setFullScreenSize();
+//        WindowConfig.setFullScreenSize();
 
 
         states.put("MAIN_MENU", new MainMenuController());
@@ -19,7 +20,11 @@ public class StateManager {
         states.put("INVENTORY", new InventoryController());
         states.put("GAME_OVER", new GameOverController());
         toMainMenu();
+//toGameOver();
+        // Init Game Loop
+        StateManager.gameLoop = new GameLoop();
 
+        startLoop();
         // Open and Start game
         stage.show();
 
@@ -74,6 +79,9 @@ public class StateManager {
     }
     public static Controller getCurrentState() {
         return currentController;
+    }
+    public static void startLoop() {
+        gameLoop.start();
     }
 }
 

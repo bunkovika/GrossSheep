@@ -1,6 +1,6 @@
 package bunkovik.view;
 
-import bunkovik.config.WindowConfig;
+import bunkovik.config.Config;
 import bunkovik.controller.InventoryController;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -12,11 +12,13 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 
 public class Inventory extends View {
     public Inventory(InventoryController controller) {
         this.controller = controller;
     }
+    private VBox equippedItems;
 
     @Override
     public void init() {
@@ -26,6 +28,20 @@ public class Inventory extends View {
         VBox vboxDown = new VBox();
         VBox vbox = new VBox(10);
         HBox hbox = new HBox();
+
+
+        // Equipped Items Title
+        Text equippedItemsTitle = new Text("Equipped Items");
+        equippedItemsTitle.setFont(Font.font("Arial", FontWeight.BOLD, 16));
+        equippedItemsTitle.setFill(Color.WHITE);
+
+        // Equipped Items
+        equippedItems = new VBox();
+//        equippedItems.setHgap(24);
+//        equippedItems.setVgap(24);
+        equippedItems.setPrefWidth(64);
+        equippedItems.setPrefHeight(64);
+
 
         Label label = new Label("E - equip                   C - consume");
         label.setTextFill(Color.WHITE);
@@ -92,11 +108,15 @@ public class Inventory extends View {
         hbox.setPadding(new Insets(100));
         hbox.getChildren().add(vbox);
 
-        scene = new Scene(hbox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
+        scene = new Scene(hbox, Config.getWindowWidth(), Config.getWindowHeight());
+        // Adding Event Listeners
+        scene.setOnKeyPressed(((InventoryController) controller)::keyPressedHandler);
+        scene.setOnKeyReleased(((InventoryController) controller)::keyReleasedHandler);
     }
     @Override
     public void render() {
 
     }
+
 }
 

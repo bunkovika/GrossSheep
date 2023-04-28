@@ -1,6 +1,6 @@
 package bunkovik.view;
 
-import bunkovik.config.WindowConfig;
+import bunkovik.config.Config;
 import bunkovik.controller.GameOverController;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -67,7 +67,7 @@ public class GameOver extends View {
         hbox.getChildren().add(vbox);
         // Attaching Event Listeners
         button.setOnMouseClicked(((GameOverController) controller)::toMainMenuButtonClickHandler);
-        scene = new Scene(hbox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
+        scene = new Scene(hbox, Config.getWindowWidth(), Config.getWindowHeight());
 
     }
     @Override

@@ -15,5 +15,9 @@ public class GameOverController extends Controller {
     public void toMainMenuButtonClickHandler(MouseEvent e) {
         StateManager.toMainMenu();
     }
+    @Override
+    public void tick(double delta){
+
+    }
 
 }

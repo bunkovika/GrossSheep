@@ -1,6 +1,6 @@
 package bunkovik.view;
 
-import bunkovik.config.WindowConfig;
+import bunkovik.config.Config;
 import bunkovik.controller.GameMenuController;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -37,6 +37,11 @@ public class GameMenu extends View {
         saveGame.setText("Save Game");
         buttons.add(saveGame);
 
+        //Main Menu
+        Button mainMenu = new Button();
+        mainMenu.setText("Main Menu");
+        buttons.add(mainMenu);
+
 //        Game Rules
         Button gameRules = new Button();
         gameRules.setText("Game Rules");
@@ -60,11 +65,12 @@ public class GameMenu extends View {
         }
         continueGame.setOnMouseClicked(((GameMenuController) controller)::gameContinueButtonClickHandler);
         saveGame.setOnMouseClicked(((GameMenuController) controller)::saveButtonClickHandler);
+        mainMenu.setOnMouseClicked(((GameMenuController) controller)::toGameRulesButtonClickHandler);
         gameRules.setOnMouseClicked(((GameMenuController) controller)::toGameRulesButtonClickHandler);
 
         hBox.getChildren().add(vBox);
 
-        scene = new Scene(hBox, WindowConfig.getWindowWidth(), WindowConfig.getWindowHeight());
+        scene = new Scene(hBox, Config.getWindowWidth(), Config.getWindowHeight());
     }
 
     @Override

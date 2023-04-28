@@ -12,4 +12,5 @@ public abstract class Controller {
     public void reset() {
         isOpened = false;
     }
+    public abstract void tick(double delta);
 }

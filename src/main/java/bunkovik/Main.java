@@ -1,7 +1,9 @@
 package bunkovik;
 
+import bunkovik.config.Config;
 import bunkovik.config.StateManager;
 import javafx.application.Application;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -21,36 +23,14 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        // loading main config
+        Config.init("config.json");
 
         // setting up stage
-        stage.setTitle("Gross Sheep");
+        stage.setTitle(Config.getWindowName());
         stage.setResizable(false);
         stage.centerOnScreen();
         StateManager.init(stage);
-
-        
-//        MainMenuView mainMenuView = new MainMenuView();
-//        mainMenuView.init();
-//
-//        GameMenu GameMenu = new GameMenu();
-//        GameMenu.init();
-//
-//        GameOverView GameOverView = new GameOverView();
-//        GameOverView.init();
-//
-//        InventoryView inv = new InventoryView();
-//        inv.init();
-//
-//        GameField field = new GameField();
-//        field.init();
-//
-//        stage.setTitle("Gross Sheep");
-//        stage.setScene(mainMenuView.getScene());
-//        stage.setScene(GameMenu.getScene());
-//        stage.setScene(GameOverView.getScene());
-//        stage.setScene(inv.getScene());
-//        stage.setScene(field.getScene());
-////
-//        stage.show();
+        stage.getIcons().add(new Image("icon/sheep_icon.png"));
     }
 }

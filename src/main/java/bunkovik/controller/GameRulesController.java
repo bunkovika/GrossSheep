@@ -14,4 +14,8 @@ public class GameRulesController extends Controller {
     public void toGameRulesButtonClickHandler(MouseEvent e) {
         StateManager.toGameRules();
     }
+    @Override
+    public void tick(double delta){
+
+    }
 }

@@ -1,4 +1,4 @@
-package bunkovik.config;
+package bunkovik.config.tile;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
