@@ -1,38 +1,59 @@
 package bunkovik.controller;
 
-import bunkovik.config.StateManager;
+import bunkovik.core.StateManager;
+import bunkovik.model.GameModel;
+import bunkovik.model.entity.Item.Item;
+import bunkovik.model.entity.Item.equipment.Weapon;
+import bunkovik.model.entity.Item.food.Food;
+import bunkovik.model.entity.Sheep;
 import bunkovik.view.Inventory;
+import bunkovik.view.component.inventory.ItemView;
 import javafx.scene.input.KeyEvent;
-
-import java.util.ArrayList;
-
 public class InventoryController extends Controller {
-    private ArrayList<String> input = new ArrayList<>();
     public void init() {
         if (isOpened) return;
         isOpened = true;
         view = new Inventory(this);
         view.init();
     }
-    @Override
-    public void tick(double delta){
 
-    }
     public void keyPressedHandler(KeyEvent e) {
+        Sheep sheep = GameModel.getInstance().getPlayer();
+        bunkovik.model.component.Inventory inventory = sheep.getInventory();
         String code = e.getCode().toString();
 
-        if (!input.contains(code)) {
-            input.add(code);
+        if (code.equals("ESCAPE") || code.equals("I")) {
+            StateManager.continueGame();
         }
 
-        //Game Field
-        if (code.equals("ESCAPE")) {
-            input = new ArrayList<>();
-            StateManager.toGameField();
+        if (code.equals("E")) {
+            if (e.getTarget() instanceof ItemView) {
+                Item item = ((ItemView) e.getTarget()).getItem();
+
+                if (item instanceof Weapon) {
+                    if (inventory.isInInventory(item)) {
+                        ((Weapon) item).equip(sheep);
+                    } else {
+                        ((Weapon) item).unEquip(sheep);
+                    }
+                }
+            }
         }
+
+        if (code.equals("C")) {
+            if (e.getTarget() instanceof ItemView) {
+                Item item = ((ItemView) e.getTarget()).getItem();
+
+                if (item instanceof Food) {
+                    ((Food) item).use(sheep);
+                }
+            }
+        }
+
     }
-    public void keyReleasedHandler(KeyEvent e) {
-        String code = e.getCode().toString();
-        input.remove(code);
+
+    @Override
+    public void tick(double delta) {
+
     }
 }

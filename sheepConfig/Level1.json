@@ -1,0 +1,12 @@
+{
+  "name": "Sheep",
+  "maxHealth": 1000,
+  "health": 200,
+  "damage": 0,
+  "damageRadius": 10,
+  "locationId": 1,
+  "positionX": 3,
+  "positionY": 1,
+  "equippedWeaponId": -1,
+  "inventory": [1,3]
+}

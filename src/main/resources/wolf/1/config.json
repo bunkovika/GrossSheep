@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "name": "Life Eater",
+  "health": 150,
+  "damage": 30,
+  "damageRadius": 10,
+  "viewingRadius": 64,
+  "attackSpeed": 100
+}

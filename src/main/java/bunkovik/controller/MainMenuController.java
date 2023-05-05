@@ -1,6 +1,6 @@
 package bunkovik.controller;
 
-import bunkovik.config.StateManager;
+import bunkovik.core.StateManager;
 import bunkovik.view.MainMenu;
 import javafx.scene.input.MouseEvent;
 
@@ -20,11 +20,8 @@ public class MainMenuController extends Controller {
         StateManager.startGame(false);
     }
 
-    public void gameRulesButtonClickHandler(MouseEvent e) {
-        StateManager.startGame(false);
-    }
     @Override
-    public void tick(double delta){
-
+    public void tick(double delta) {
+        view.render();
     }
 }

@@ -1,6 +1,6 @@
 package bunkovik.controller;
 
-import bunkovik.config.StateManager;
+import bunkovik.core.StateManager;
 import bunkovik.view.GameOver;
 import javafx.scene.input.MouseEvent;
 
@@ -12,12 +12,12 @@ public class GameOverController extends Controller {
         view.init();
     }
 
-    public void toMainMenuButtonClickHandler(MouseEvent e) {
-        StateManager.toMainMenu();
+    public void goToMainMenuButtonClickHandler(MouseEvent e) {
+        StateManager.goToMainMenu();
     }
+
     @Override
-    public void tick(double delta){
-
+    public void tick(double delta) {
+        view.render();
     }
-
 }

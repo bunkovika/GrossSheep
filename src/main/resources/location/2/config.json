@@ -1,4 +1,40 @@
 {
   "id": 2,
-  "name": "SECOND LEVEL"
+  "name": "SECOND LEVEL",
+  "portals": [
+    {
+      "id": 2,
+      "positionX": 15,
+      "positionY": 10
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "positionX": 7,
+      "positionY": 3
+    },
+    {
+      "id": 2,
+      "positionX": 13,
+      "positionY": 2
+    },
+    {
+      "id": 3,
+      "positionX": 9,
+      "positionY": 10
+    },
+    {
+      "id": 2,
+      "positionX": 4,
+      "positionY": 8
+    }
+  ],
+  "monsters": [
+    {
+      "id": 1,
+      "positionX": 13,
+      "positionY": 10
+    }
+  ]
 }

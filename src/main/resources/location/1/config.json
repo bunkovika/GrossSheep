@@ -1,4 +1,40 @@
 {
   "id": 1,
-  "name": "FIRST LEVEL"
+  "name": "FIRST LEVEL",
+  "portals": [
+    {
+      "id": 1,
+      "positionX": 15,
+      "positionY": 2
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "positionX": 2,
+      "positionY": 9
+    },
+    {
+      "id": 2,
+      "positionX": 4,
+      "positionY": 6
+    },
+    {
+      "id": 3,
+      "positionX": 13,
+      "positionY": 10
+    },
+    {
+      "id": 2,
+      "positionX": 14,
+      "positionY": 4
+    }
+  ],
+  "monsters": [
+    {
+      "id": 1,
+      "positionX": 12,
+      "positionY": 2
+    }
+  ]
 }

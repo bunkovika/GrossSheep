@@ -1,10 +1,9 @@
 package bunkovik.view;
 
-
-import bunkovik.config.Config;
-import bunkovik.config.SpriteManager;
-import bunkovik.config.tile.TileMap;
 import bunkovik.controller.GameFieldController;
+import bunkovik.core.Config;
+import bunkovik.core.sprite.SpriteManager;
+import bunkovik.core.tile.TileMap;
 import bunkovik.model.GameModel;
 import bunkovik.model.entity.Sheep;
 import bunkovik.view.component.game.HPBox;
@@ -13,7 +12,10 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.layout.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 public class GameField extends View {
     private TileMap tileMap;
@@ -29,7 +31,7 @@ public class GameField extends View {
         GameModel gameModel = GameModel.getInstance();
         tileMap = gameModel.getTileMap();
         spriteManager = gameModel.getSpriteManager();
-        Sheep sheep = gameModel.getSheep();
+        Sheep sheep = gameModel.getPlayer();
         canvasBox = new VBox();
 //        ---------canvas and view of tileMap--------
 
@@ -40,9 +42,14 @@ public class GameField extends View {
         canvasBox.getChildren().add(canvas);
 
 //---------------------HP BOX--------------------------------
+        BorderPane borderPane = new BorderPane();
+        HPBox health = new HPBox(sheep.getHP().getHealth());
+        sheep.getHP().addObserver(health);
+        borderPane.getChildren().add(health.getText());
+        borderPane.setTop(canvasBox);
 //---------------Stack PAne for combine HP BOX and canvasBox ------------
         StackPane stackPane = new StackPane();
-        stackPane.getChildren().add(canvasBox);
+        stackPane.getChildren().addAll(canvasBox, borderPane);
 //        -------HBox-------
         HBox hbox = new HBox();
         hbox.setAlignment(Pos.CENTER);
@@ -56,6 +63,9 @@ public class GameField extends View {
         // Attaching Event Listeners
         scene.setOnKeyPressed(((GameFieldController) controller)::keyPressedHandler);
         scene.setOnKeyReleased(((GameFieldController) controller)::keyReleasedHandler);
+    }
+    public VBox getCanvasRoot() {
+        return canvasBox;
     }
 
     @Override

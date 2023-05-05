@@ -1,7 +1,7 @@
 package bunkovik.view;
 
-import bunkovik.config.Config;
 import bunkovik.controller.GameOverController;
+import bunkovik.core.Config;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -10,6 +10,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+
 import static javafx.scene.text.TextAlignment.CENTER;
 
 public class GameOver extends View {
@@ -36,25 +37,25 @@ public class GameOver extends View {
         description.setTextAlignment(CENTER);
         description.setFill(Color.WHITE);
         description.setStyle("-fx-font-size: 24px; " +
-                                "-fx-font-weight: 600; " );
+                "-fx-font-weight: 600; " );
 
 //        BUTTON
         button.setPrefHeight(80);
         button.setPrefWidth(250);
         button.setStyle("" +
-                        "-fx-background-color: #553A5F; " +
-                        "-fx-background-radius: 20; " +
-                        "-fx-border-radius: 30; " +
-                        "-fx-text-fill: #FFFFFF; " +
-                        "-fx-font-size: 30px; " +
-                        "-fx-font-weight: 700; " +
-                        "-fx-cursor: hand;");
+                "-fx-background-color: #553A5F; " +
+                "-fx-background-radius: 20; " +
+                "-fx-border-radius: 30; " +
+                "-fx-text-fill: #FFFFFF; " +
+                "-fx-font-size: 30px; " +
+                "-fx-font-weight: 700; " +
+                "-fx-cursor: hand;");
 
 //        VBOX
         vbox.setAlignment(Pos.CENTER);
         vbox.setStyle("-fx-background-color: #956E8D; "+
-                      "-fx-border-radius: 30; "+
-                      "-fx-background-radius: 10; " );
+                "-fx-border-radius: 30; "+
+                "-fx-background-radius: 10; " );
         vbox.setPrefWidth(850);
         vbox.setPadding(new Insets(100));
         vbox.setSpacing(60);
@@ -66,7 +67,7 @@ public class GameOver extends View {
         hbox.setPadding(new Insets(100));
         hbox.getChildren().add(vbox);
         // Attaching Event Listeners
-        button.setOnMouseClicked(((GameOverController) controller)::toMainMenuButtonClickHandler);
+        button.setOnMouseClicked(((GameOverController) controller)::goToMainMenuButtonClickHandler);
         scene = new Scene(hbox, Config.getWindowWidth(), Config.getWindowHeight());
 
     }
