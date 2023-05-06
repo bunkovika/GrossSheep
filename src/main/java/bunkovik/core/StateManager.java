@@ -41,8 +41,6 @@ public class StateManager {
         stage.show();
         startLoop();
     }
-
-
     public static void startGame(boolean fromSave) {
         currentController = states.get("GAME");
 
@@ -53,6 +51,7 @@ public class StateManager {
 
         // Init Game Model
         GameModel gameModel = GameModel.getInstance();
+        gameModel.setIdOfCurrentLocation();
         gameModel.init(fromSave);
 
         // Init Controller

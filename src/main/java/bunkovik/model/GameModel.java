@@ -31,7 +31,6 @@ public class GameModel {
         currentLocationId++;
         // Loading Player Config
         JSONObject playerConfig = SheepConfig.getPlayerConfig(fromSave, getIdOfCurrentLocation());
-        System.out.println(getIdOfCurrentLocation());
         locationManager = new LocationManager();
 
         // Setting characteristics
@@ -93,6 +92,9 @@ public class GameModel {
     }
     public int getIdOfCurrentLocation(){
         return currentLocationId;
+    }
+    public void setIdOfCurrentLocation(){
+       currentLocationId = 0;
     }
 
     public TileMap getTileMap() {

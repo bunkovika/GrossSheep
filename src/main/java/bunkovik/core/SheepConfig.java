@@ -34,12 +34,6 @@ public class SheepConfig {
 
         return null;
     }
-
-    public static boolean isExistPlayerSave() {
-        File f = new File("save/savedLevel.json");
-        return f.isFile();
-    }
-
     public static void savePlayerConfig() {
         JSONObject playerConfig = new JSONObject();
         GameModel gameModel = GameModel.getInstance();

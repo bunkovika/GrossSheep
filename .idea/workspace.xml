@@ -4,86 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="creating class to open the config of wolf">
-      <change afterPath="$PROJECT_DIR$/sheepConfig/Level1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sheepConfig/Level2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameWinController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/SheepConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/factory/ItemFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/factory/TransitionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/location/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/sprite/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/sprite/SpriteManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/component/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/component/HP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Item/equipment/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Item/food/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Transition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameWin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/item/1/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/item/1/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/item/2/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/item/2/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/item/3/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/item/3/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/player_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/player_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/player_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/player_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transition/1/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transition/1/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transition/2/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transition/2/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/Attack/wolf_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/Attack/wolf_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/Attack/wolf_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/Attack/wolf_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/fixedPosition/image6.png" afterDir="false" />
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="beta version of the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/GameLoop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/SpriteManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/StateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/location/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/location/LocationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/location/LocationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/tile/TileMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/tile/TileMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/config/tile/TileMapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/tile/TileMapManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameFieldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameFieldController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameOverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameOverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameRulesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/SheepConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/SheepConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/StateManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/GameModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Item/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sheep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sprite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Wolf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/items/attack/meat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/items/protect/Carrot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/items/protect/Wheet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameOver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameRules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/component/game/HPBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/component/game/HPBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/items/1/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/items/2/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/items/3/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/location/1/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/location/1/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/location/2/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/location/2/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +58,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
@@ -292,7 +218,7 @@
       <workItem from="1683033269773" duration="62000" />
       <workItem from="1683033381218" duration="2550000" />
       <workItem from="1683047459814" duration="1189000" />
-      <workItem from="1683296109077" duration="2637000" />
+      <workItem from="1683296109077" duration="6790000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -483,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683048275545</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="beta version of the project">
+      <created>1683304502832</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683304502832</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +470,8 @@
     <MESSAGE value="creating Inventory for delegating some process in Inventory(get, remove item)" />
     <MESSAGE value="ItemView" />
     <MESSAGE value="creating class to open the config of wolf" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating class to open the config of wolf" />
+    <MESSAGE value="beta version of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta version of the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
