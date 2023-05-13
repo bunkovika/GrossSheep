@@ -18,6 +18,7 @@ public class StateManager {
     private static Controller currentController;
     private static Stage stage;
     private static GameLoop gameLoop;
+    private static boolean isStarted;
 
 
     public static void init(Stage stage) {
@@ -26,6 +27,7 @@ public class StateManager {
         // Init States
         states.put("MENU", new MainMenuController());
         states.put("GAME_MENU", new GameMenuController());
+        states.put("GAME_RULES", new GameRulesController());
         states.put("GAME", new GameFieldController());
         states.put("INVENTORY", new InventoryController());
         states.put("GAME_OVER", new GameOverController());
@@ -59,6 +61,7 @@ public class StateManager {
 
         // Setting Scene
         stage.setScene(currentController.getView().getScene());
+        isStarted = true;
     }
     public static void continueGame() {
         currentController = states.get("GAME");
@@ -66,6 +69,7 @@ public class StateManager {
         stage.setScene(currentController.getView().getScene());
 
         log.info("Continue game.");
+        isStarted = true;
     }
 
     public static void goToMainMenu() {
@@ -74,6 +78,7 @@ public class StateManager {
         stage.setScene(currentController.getView().getScene());
 
         log.info("Go to the main menu.");
+        isStarted = false;
     }
     public static void goToGameMenu() {
         currentController = states.get("GAME_MENU");
@@ -81,6 +86,14 @@ public class StateManager {
         stage.setScene(currentController.getView().getScene());
 
         log.info("Go to the game menu.");
+        isStarted = true;
+    }
+    public static void goToGameRules() {
+        currentController = states.get("GAME_RULES");
+        currentController.init();
+        stage.setScene(currentController.getView().getScene());
+
+        log.info("Go to the game rules.");
     }
 
     public static void goToInventory() {
@@ -89,6 +102,7 @@ public class StateManager {
         stage.setScene(currentController.getView().getScene());
 
         log.info("Go to the inventory.");
+//        isStarted = true;
     }
 
     public static void gameOver() {
@@ -106,19 +120,13 @@ public class StateManager {
         log.info("Game Win.");
     }
 
+    public static boolean isIsStarted() {
+        return isStarted;
+    }
 
     public static void resetScene() {
         stage.setScene(currentController.getView().getScene());
     }
-
-
-    public static void exitGame() {
-        log.info("Exit Game.");
-
-        Platform.exit();
-        System.exit(0);
-    }
-
 
     public static void startLoop() {
         gameLoop.start();

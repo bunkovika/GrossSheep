@@ -1,9 +1,9 @@
 {
   "id": 1,
-  "name": "Life Eater",
-  "health": 150,
+  "name": "devourer of sheep",
+  "health": 200,
   "damage": 50,
   "damageRadius": 10,
-  "viewingRadius": 64,
-  "attackSpeed": 100
+  "viewingRadius": 63,
+  "attackSpeed": 300
 }

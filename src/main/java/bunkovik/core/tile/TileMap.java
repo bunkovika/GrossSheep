@@ -5,7 +5,7 @@ import javafx.scene.canvas.GraphicsContext;
 
 public class TileMap {
     private Tile[][] tiles;
-    private int tileSize;
+    private static int tileSize;
     private int mapWidth;
     private int mapHeight;
 
@@ -63,5 +63,9 @@ public class TileMap {
 
     public int getMapHeight() {
         return mapHeight;
+    }
+
+    public static int getTileSize() {
+        return tileSize;
     }
 }

@@ -1,9 +1,13 @@
 package bunkovik.core;
 
+import bunkovik.core.factory.WolfFactory;
+import bunkovik.core.location.Location;
 import bunkovik.core.tile.TileMap;
 import bunkovik.model.GameModel;
 import bunkovik.model.entity.Item.Item;
 import bunkovik.model.entity.Sheep;
+import bunkovik.model.entity.Transition;
+import bunkovik.model.entity.Wolf;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -20,8 +24,8 @@ public class SheepConfig {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
 
-    public static JSONObject getPlayerConfig(boolean fromSave, int level_id) {
-        String path = fromSave ? "save/savedLevel.json" : "sheepConfig/Level" + level_id + ".json";
+    public static JSONObject getPlayerConfig(boolean fromSave) {
+        String path = fromSave ? "save/savedSheepConfig.json" : "sheepConfig/config.json";
 
         try {
             File file = new File(path);
@@ -36,6 +40,7 @@ public class SheepConfig {
     }
     public static void savePlayerConfig() {
         JSONObject playerConfig = new JSONObject();
+
         GameModel gameModel = GameModel.getInstance();
         Sheep sheep = gameModel.getPlayer();
 
@@ -47,6 +52,7 @@ public class SheepConfig {
         playerConfig.put("locationId", gameModel.getCurrentLocation().getId());
         playerConfig.put("positionX", TileMap.convertPixelToTile(sheep.getX()));
         playerConfig.put("positionY", TileMap.convertPixelToTile(sheep.getY()));
+
 
         Item currentWeapon = sheep.getCurrentWeapon();
         if (currentWeapon != null) {
@@ -64,7 +70,7 @@ public class SheepConfig {
         }
 
         try (
-                BufferedWriter writer = new BufferedWriter(new FileWriter("save/savedLevel.json"))
+                BufferedWriter writer = new BufferedWriter(new FileWriter("save/savedSheepConfig.json"))
         ) {
             writer.write(playerConfig.toString());
         } catch (IOException e) {

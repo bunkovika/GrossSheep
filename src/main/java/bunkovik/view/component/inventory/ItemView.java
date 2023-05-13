@@ -1,14 +1,14 @@
 package bunkovik.view.component.inventory;
 
 import bunkovik.model.entity.Item.Item;
-import bunkovik.view.Inventory;
+import bunkovik.view.InventoryView;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 
 public class ItemView extends Button {
     private Item itemRef;
 
-    public ItemView(Inventory inventory) {
+    public ItemView(InventoryView inventory) {
         super();
 
         setPrefWidth(90);

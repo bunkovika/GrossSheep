@@ -5,7 +5,11 @@ import bunkovik.model.entity.Sheep;
 
 import java.util.Observable;
 import java.util.logging.Logger;
-
+/**
+ * The type Equipment.
+ * <p>
+ * A class that represents a player's equipment (equipped items) and their management.
+ */
 public class Equipment extends Observable {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
@@ -20,7 +24,7 @@ public class Equipment extends Observable {
                 inventory.addItem(weapon);
             }
 
-            weapon = (Weapon) item;
+            weapon = item;
             log.info("Weapon \"" + item.getName() + "\" was equipped.");
         }
         setChanged();

@@ -16,13 +16,12 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-
 public class GameModel {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
 
     private static GameModel instance;
-    private Sheep sheep;
+    private Sheep player;
     private Location currentLocation;
     private LocationManager locationManager;
     private int currentLocationId;
@@ -30,78 +29,85 @@ public class GameModel {
     public void init(boolean fromSave) {
         currentLocationId++;
         // Loading Player Config
-        JSONObject playerConfig = SheepConfig.getPlayerConfig(fromSave, getIdOfCurrentLocation());
+        JSONObject playerConfig = SheepConfig.getPlayerConfig(fromSave);
         locationManager = new LocationManager();
 
         // Setting characteristics
-        sheep = new Sheep(
+        player = new Sheep(
                 playerConfig.getString("name"),
                 playerConfig.getDouble("health"),
                 playerConfig.getDouble("damage"),
                 playerConfig.getDouble("damageRadius"));
 
-        sheep.getHP().setMaxHealth(playerConfig.getDouble("maxHealth"));
+        player.getHP().setMaxHealth(playerConfig.getDouble("maxHealth"));
 
-        // Setting Equipped Items
+
         int equippedWeaponId = playerConfig.getInt("equippedWeaponId");
         if (equippedWeaponId != -1) {
-            sheep.setEquipment((Weapon) ItemFactory.getItem(equippedWeaponId));
+            player.setEquipment((Weapon) ItemFactory.getItem(equippedWeaponId));
         }
-
-
         // Setting items in the inventory
         for (Object item : playerConfig.getJSONArray("inventory")) {
-            sheep.getInventory().addItem(ItemFactory.getItem((int) item));
+            player.getInventory().addItem(ItemFactory.getItem((int) item));
         }
 
-        sheep.setPosition(
+        player.setPosition(
                 TileMap.convertTileToPixel(playerConfig.getInt("positionX")),
                 TileMap.convertTileToPixel(playerConfig.getInt("positionY")));
 
         // Setting Up Location
-        currentLocationId = playerConfig.getInt("locationId");
-        setLocation(currentLocationId);
+
+            setLocation(playerConfig.getInt("locationId"),fromSave);
 
     }
-
     public static GameModel getInstance() {
         if (instance == null) {
             instance = new GameModel();
         }
         return instance;
     }
-
-    public void setLocation(int locationId) {
+    public void setLocation(int locationId, boolean fromSaved) {
         if (currentLocation != null) {
             currentLocation.unsetPlayer();
-
         }
-        currentLocation = locationManager.getLocation(locationId);
+        if(fromSaved){
+            currentLocation = locationManager.getLocation(locationId, true);
+        }else{
+            currentLocation = locationManager.getLocation(locationId,false);
+        }
         currentLocation.init();
-        currentLocation.setPlayer(sheep);
+        currentLocation.setPlayer(player);
 
         log.info("The location \"" + currentLocation.getName() + "\" was set.");
     }
+//    public void setLocation(int locationId) {
+//        if (currentLocation != null) {
+//            currentLocation.unsetPlayer();
+//        }
+//
+//        currentLocation = locationManager.getLocation(locationId,false);
+//        currentLocation.init();
+//        currentLocation.setPlayer(player);
+//
+//        log.info("The location \"" + currentLocation.getName() + "\" was set.");
+//    }
+    public void setIdOfCurrentLocation(){
+        currentLocationId = 0;
+    }
 
     public Sheep getPlayer() {
-        return sheep;
+        return player;
     }
 
     public Location getCurrentLocation() {
         return currentLocation;
-    }
-    public int getIdOfCurrentLocation(){
-        return currentLocationId;
-    }
-    public void setIdOfCurrentLocation(){
-       currentLocationId = 0;
     }
 
     public TileMap getTileMap() {
         return currentLocation.getTileMap();
     }
 
-    public ArrayList<Wolf> getMonsters() {
+    public ArrayList<Wolf> getWolves() {
         return currentLocation.getMonsters();
     }
 
@@ -113,7 +119,12 @@ public class GameModel {
         return currentLocation.getPortals();
     }
 
+
     public SpriteManager getSpriteManager() {
         return currentLocation.getSpriteManager();
+    }
+
+    public int getCurrentLocationId() {
+        return currentLocationId;
     }
 }

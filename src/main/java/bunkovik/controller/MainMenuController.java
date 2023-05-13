@@ -11,15 +11,15 @@ public class MainMenuController extends Controller {
         view = new MainMenu(this);
         view.init();
     }
-
     public void gameLoadButtonClickHandler(MouseEvent e) {
         StateManager.startGame(true);
     }
-
     public void gameStartButtonClickHandler(MouseEvent e) {
         StateManager.startGame(false);
     }
-
+    public void gameRulesButtonClickHandler(MouseEvent e) {
+        StateManager.goToGameRules();
+    }
     @Override
     public void tick(double delta) {
         view.render();

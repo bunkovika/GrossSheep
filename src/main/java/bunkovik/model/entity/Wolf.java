@@ -10,9 +10,6 @@ import java.util.logging.Logger;
 public class Wolf extends Sprite {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
-
-    // Links
-    private Random random = new Random();
     private Sheep aim;
 
     // Characteristics

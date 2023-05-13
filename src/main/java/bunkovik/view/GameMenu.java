@@ -64,7 +64,7 @@ public class GameMenu extends View {
         continueGame.setOnMouseClicked(((GameMenuController) controller)::gameContinueButtonClickHandler);
         saveGame.setOnMouseClicked(((GameMenuController) controller)::gameSaveButtonClickHandler);
         mainMenu.setOnMouseClicked(((GameMenuController) controller)::toMainMenuButtonClickHandler);
-//        gameRules.setOnMouseClicked(((GameMenuController) controller)::toGameRulesButtonClickHandler);
+        gameRules.setOnMouseClicked(((GameMenuController) controller)::toGameRulesButtonClickHandler);
 
         hBox.getChildren().add(vBox);
 

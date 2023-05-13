@@ -71,7 +71,7 @@ public class MainMenu extends View {
         hBox.getChildren().add(vBox);
         startGame.setOnMouseClicked(((MainMenuController) controller)::gameStartButtonClickHandler);
         loadGame.setOnMouseClicked(((MainMenuController) controller)::gameLoadButtonClickHandler);
-//        gameRules.setOnMouseClicked(((MainMenuController) controller)::gameRulesButtonClickHandler);
+        gameRules.setOnMouseClicked(((MainMenuController) controller)::gameRulesButtonClickHandler);
         scene = new Scene(hBox,Config.getWindowWidth(), Config.getWindowHeight());
     }
 

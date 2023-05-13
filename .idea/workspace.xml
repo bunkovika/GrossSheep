@@ -4,12 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="beta version of the project">
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="adding save config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/savedLevel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheepConfig/Level1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheepConfig/Level2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameFieldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameFieldController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/GameMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/controller/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/controller/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/SheepConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/SheepConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/StateManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/location/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/location/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/location/LocationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/location/LocationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/core/tile/TileMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/core/tile/TileMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/GameModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/component/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/component/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/component/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/component/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Sheep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Transition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/model/entity/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bunkovik/view/component/inventory/ItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bunkovik/view/component/inventory/ItemView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/item/3/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/item/3/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/location/2/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/location/2/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/location/2/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/location/2/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/player_bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/player_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/player_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/player_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sheep/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/wolf/1/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/wolf/1/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,6 +247,17 @@
       <workItem from="1683033381218" duration="2550000" />
       <workItem from="1683047459814" duration="1189000" />
       <workItem from="1683296109077" duration="6790000" />
+      <workItem from="1683375169616" duration="386000" />
+      <workItem from="1683711127677" duration="8000000" />
+      <workItem from="1683719439457" duration="144000" />
+      <workItem from="1683749226316" duration="305000" />
+      <workItem from="1683749693456" duration="301000" />
+      <workItem from="1683798293187" duration="56000" />
+      <workItem from="1683892266069" duration="135000" />
+      <workItem from="1683904924904" duration="2054000" />
+      <workItem from="1683913001639" duration="16000" />
+      <workItem from="1683981695150" duration="31000" />
+      <workItem from="1683981935935" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -416,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683304502832</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="adding save config">
+      <created>1683375415032</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1683375415032</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creation of the classes" />
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
     <MESSAGE value="create classes" />
@@ -471,7 +516,8 @@
     <MESSAGE value="ItemView" />
     <MESSAGE value="creating class to open the config of wolf" />
     <MESSAGE value="beta version of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta version of the project" />
+    <MESSAGE value="adding save config" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding save config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

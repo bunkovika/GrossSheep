@@ -2,6 +2,7 @@ package bunkovik.model.entity;
 
 import bunkovik.core.StateManager;
 import bunkovik.core.sprite.Sprite;
+import bunkovik.model.GameModel;
 import bunkovik.model.component.Equipment;
 import bunkovik.model.component.HP;
 import bunkovik.model.component.Inventory;
@@ -18,9 +19,7 @@ public class Sheep extends Sprite {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
 
-
     private boolean isDead;
-    private boolean isWinner;
     private double lastAttack;
 
     // Characteristics
@@ -37,6 +36,9 @@ public class Sheep extends Sprite {
     // Equipped Items
     private final Equipment equipment;
 
+//    public void setInventory(Inventory inventory) {
+//        this.inventory = inventory;
+//    }
 
     public Sheep(String name, double health, double damage, double damageRadius) {
         super();
@@ -44,15 +46,15 @@ public class Sheep extends Sprite {
         this.health = new HP(health);
         this.basicDamage = damage;
         this.damageRadius = damageRadius;
-        this.inventory = new Inventory(8);
         this.equipment = new Equipment();
+        this.inventory = new Inventory(8);
         this.isDead = false;
 
         // Setting Up Direction Images
-        images.put(Direction.TOP, new Image("player/player_top.png"));
-        images.put(Direction.RIGHT, new Image("player/player_right.png"));
-        images.put(Direction.BOTTOM, new Image("player/player_bottom.png"));
-        images.put(Direction.LEFT, new Image("player/player_left.png"));
+        images.put(Direction.TOP, new Image("sheep/sheep_top.png"));
+        images.put(Direction.RIGHT, new Image("sheep/sheep_right.png"));
+        images.put(Direction.BOTTOM, new Image("sheep/sheep_bottom.png"));
+        images.put(Direction.LEFT, new Image("sheep/sheep_left.png"));
 
         // Setting Up Default Image
         currentDirection = Direction.BOTTOM;
@@ -101,6 +103,11 @@ public class Sheep extends Sprite {
     public Inventory getInventory() {
         return inventory;
     }
+
+//    public void setInventory(Inventory inventory) {
+//        this.inventory = inventory;
+//    }
+
     public Equipment getEquipment() {
         return equipment;
     }

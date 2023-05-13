@@ -14,7 +14,6 @@ public abstract class Item extends Sprite {
         this.name = name;
     }
 
-
     public boolean take(Sheep sheep) {
         return sheep.getInventory().addItem(this);
     }

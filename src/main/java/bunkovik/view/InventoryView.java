@@ -29,7 +29,7 @@ import java.util.Observer;
 import static javafx.geometry.Pos.TOP_CENTER;
 
 
-public class Inventory extends View implements Observer {
+public class InventoryView extends View implements Observer {
     private VBox itemInfoView;
     private Pane itemInfoContainer;
     private VBox itemsView;
@@ -41,7 +41,7 @@ public class Inventory extends View implements Observer {
     private Sheep sheep;
 
 
-    public Inventory(InventoryController controller) {
+    public InventoryView(InventoryController controller) {
         this.controller = controller;
     }
 
@@ -50,7 +50,6 @@ public class Inventory extends View implements Observer {
         sheep = gameModel.getPlayer();
         inventory = sheep.getInventory();
 
-        // Main Pane
         HBox hbox = new HBox();
         hbox.setAlignment(Pos.CENTER);
         hbox.setStyle("-fx-background-color: #553A5F; ");
@@ -181,7 +180,7 @@ public class Inventory extends View implements Observer {
         hbox.getChildren().add(vbox);
 
         // Setting Scene
-        scene = new Scene(hbox, Config.getWindowWidth(), Config.getWindowHeight(), Color.BLACK);
+        scene = new Scene(hbox, Config.getWindowWidth(), Config.getWindowHeight());
 
         // Attaching Event Listeners
         scene.setOnKeyPressed(((InventoryController) controller)::keyPressedHandler);

@@ -37,13 +37,15 @@ public class Location {
     private SpriteManager spriteManager;
 
     // State
-    private boolean wasInitialized;
+    private boolean isOpened;
 
-    public Location(int locationId) {
+    public Location(int locationId, boolean fromSaved) {
+        String path = fromSaved ? "save/savedLocation.json" : "src/main/resources/location/" + locationId + "/config.json";
+
         this.locationId = locationId;
 
         try {
-            File file = new File("src/main/resources/location/" + locationId + "/config.json");
+            File file = new File(path);
             String content = new String(Files.readAllBytes(Paths.get(file.toURI())));
             config = new JSONObject(content);
         } catch (IOException e) {
@@ -56,7 +58,7 @@ public class Location {
     }
 
     public void init() {
-        if (wasInitialized) return;
+        if (isOpened) return;
 
         // Sprite Manager Init
         spriteManager = new SpriteManager();
@@ -98,7 +100,7 @@ public class Location {
             spriteManager.addSprite(transition);
         }
 
-        wasInitialized = true;
+        isOpened = true;
 
         log.info("Location \"" + getName() + "\" was initialized.");
     }

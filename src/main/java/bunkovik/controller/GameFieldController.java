@@ -28,8 +28,6 @@ public class GameFieldController extends Controller {
     private SpriteManager spriteManager;
     private VBox canvasRoot;
 
-//    private Pane canvasRoot;
-
     public void init() {
         if (isOpened) return;
 
@@ -37,16 +35,15 @@ public class GameFieldController extends Controller {
         view = new GameField(this);
         view.init();
 
-        // Links to game entitles
+        // Links to game entities
         GameModel gameModel = GameModel.getInstance();
         sheep = gameModel.getPlayer();
-        wolves = gameModel.getMonsters();
+        wolves = gameModel.getWolves();
         items = gameModel.getItems();
         transitions = gameModel.getPortals();
         tileMap = gameModel.getTileMap();
         canvasRoot = ((GameField) view).getCanvasRoot();
         spriteManager = gameModel.getSpriteManager();
-
 
         // Setting Up State
         isOpened = true;
@@ -65,7 +62,7 @@ public class GameFieldController extends Controller {
             playerAttack();
         }
 
-        // Main Menu
+        // Game Menu
         if (code.equals("ESCAPE")) {
             input = new ArrayList<>();
             StateManager.goToGameMenu();
@@ -73,20 +70,17 @@ public class GameFieldController extends Controller {
 
         // Go to Inventory
         if (code.equals("I")) {
-            resetInput();
+            input = new ArrayList<>();
             StateManager.goToInventory();
         }
     }
-
 
     public void keyReleasedHandler(KeyEvent e) {
         String code = e.getCode().toString();
         input.remove(code);
     }
 
-
     public void playerAttack() {
-        // Wolf
         ArrayList<Wolf> deadWolves = new ArrayList<>();
 
         for (Wolf wolf : wolves) {
@@ -185,11 +179,15 @@ public class GameFieldController extends Controller {
         // Transition
         for (Transition transition : transitions) {
             if (sheep.intersectsMoveBox(transition)) {
+//
                 if (transition.getId() == transitions.size()+1) {
                     StateManager.gameWin();
+
                     return;
                 }
+//                sheep.getInventory().resetInventory();
                 transition.activate();
+
                 for (Wolf wolf : wolves) {
                     wolf.offCombat();
                 }
@@ -200,6 +198,8 @@ public class GameFieldController extends Controller {
 
                 // Reset Current Game Scene
                 StateManager.resetScene();
+                resetInput();
+
                 return;
             }
         }
