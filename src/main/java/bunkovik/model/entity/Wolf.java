@@ -13,6 +13,7 @@ public class Wolf extends Sprite {
     private Sheep aim;
 
     // Characteristics
+    protected final int id;
     private final String name;
     private final double damage;
     private final double damageRadius;
@@ -28,7 +29,8 @@ public class Wolf extends Sprite {
     private int currentImageIndex; // keeps track of the current image index
     private long lastImageChangeTime;
 
-    public Wolf(String name, double health, double damage, double damageRadius, double viewingRadius, double attackSpeed, String[] images) {
+    public Wolf(int id, String name, double health, double damage, double damageRadius, double viewingRadius, double attackSpeed, String[] images) {
+        this.id = id;
         this.name = name;
         this.health = health;
         this.damage = damage;
@@ -44,7 +46,6 @@ public class Wolf extends Sprite {
         currentDirection = Direction.BOTTOM;
 
     }
-
     public void attack(Sheep sheep) {
         if ((System.currentTimeMillis() - lastAttack) < attackSpeed) {
             return;
@@ -69,6 +70,10 @@ public class Wolf extends Sprite {
 
         // Counterattack
         attack(sheep);
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -222,7 +227,6 @@ public class Wolf extends Sprite {
             }else{ lastImageChangeTime = currentTime;}
         }
     }
-
     public void offCombat() {
         inCombat = false;
     }

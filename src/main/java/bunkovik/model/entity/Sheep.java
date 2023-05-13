@@ -36,10 +36,6 @@ public class Sheep extends Sprite {
     // Equipped Items
     private final Equipment equipment;
 
-//    public void setInventory(Inventory inventory) {
-//        this.inventory = inventory;
-//    }
-
     public Sheep(String name, double health, double damage, double damageRadius) {
         super();
         this.name = name;

@@ -10,7 +10,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-
 import static javafx.scene.text.TextAlignment.CENTER;
 
 public class GameWin extends View {

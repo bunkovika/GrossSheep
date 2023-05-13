@@ -45,7 +45,6 @@ public class TileMapManager {
                 tileMap.setTile(j, i, getTile(String.valueOf(c)));
             }
         }
-
         return tileMap;
     }
 

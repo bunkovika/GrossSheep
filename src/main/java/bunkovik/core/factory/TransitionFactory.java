@@ -14,7 +14,6 @@ public class TransitionFactory {
             File file = new File("src/main/resources/transition/" + id + "/config.json");
             String content = new String(Files.readAllBytes(Paths.get(file.toURI())));
             JSONObject config = new JSONObject(content);
-
             // Creating Transition to new level
             Transition transition = new Transition(
                     id,

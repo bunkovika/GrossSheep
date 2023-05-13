@@ -13,7 +13,6 @@ import java.util.logging.Logger;
 public class Equipment extends Observable {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
-
     private Weapon weapon;
 
     public void setEquipment(Weapon item, Inventory inventory) {

@@ -68,7 +68,6 @@ public class SheepConfig {
         for (Item item : sheep.getInventory().getItems()) {
             inventory.put(item.getId());
         }
-
         try (
                 BufferedWriter writer = new BufferedWriter(new FileWriter("save/savedSheepConfig.json"))
         ) {

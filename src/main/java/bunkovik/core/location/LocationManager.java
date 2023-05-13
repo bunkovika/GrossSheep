@@ -44,12 +44,13 @@ public class LocationManager {
         JSONArray monsterArray = new JSONArray();
         for (int i = 0; i < location.getMonsters().size(); i++) {
             JSONObject monsterConfig = new JSONObject();
-            if(location.getMonsters().get(i).isDead()){
+            Wolf wolf = location.getMonsters().get(i);
+            if(wolf.isDead()){
                 monsterConfig.put("id", -1);
                 monsterConfig.put("positionX", -1);
                 monsterConfig.put("positionY", -1);
             } else {
-                monsterConfig.put("id", i+1);
+                monsterConfig.put("id",wolf.getId());
                 monsterConfig.put("positionX", TileMap.convertPixelToTile(location.getMonsters().get(i).getX()));
                 monsterConfig.put("positionY", TileMap.convertPixelToTile(location.getMonsters().get(i).getY()));
             }
@@ -60,8 +61,9 @@ public class LocationManager {
         JSONArray itemsArray = new JSONArray();
         for (int i = 0; i < location.getItems().size(); i++) {
             JSONObject itemsConfig = new JSONObject();
+
             Item item = location.getItems().get(i);
-            itemsConfig.put("id", i+1);
+            itemsConfig.put("id", item.getId());
             itemsConfig.put("positionX", TileMap.convertPixelToTile(item.getX()));
             itemsConfig.put("positionY", TileMap.convertPixelToTile(item.getY()));
             itemsArray.put(itemsConfig);
@@ -69,12 +71,12 @@ public class LocationManager {
         locationConfig.put("items", itemsArray);
 
         JSONArray portalsArray = new JSONArray();
-        for (int i = 0; i < location.getPortals().size(); i++) {
+        for (int i = 0; i < location.getTransitions().size(); i++) {
             JSONObject transitionConfig = new JSONObject();
-            Transition portal = location.getPortals().get(i);
-            transitionConfig.put("id", i+1);
-            transitionConfig.put("positionX", TileMap.convertPixelToTile(portal.getX()));
-            transitionConfig.put("positionY", TileMap.convertPixelToTile(portal.getY()));
+            Transition transition = location.getTransitions().get(i);
+            transitionConfig.put("id", transition.getId());
+            transitionConfig.put("positionX", TileMap.convertPixelToTile(transition.getX()));
+            transitionConfig.put("positionY", TileMap.convertPixelToTile(transition.getY()));
             portalsArray.put(transitionConfig);
         }
         locationConfig.put("portals", portalsArray);

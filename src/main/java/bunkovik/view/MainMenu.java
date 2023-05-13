@@ -16,7 +16,6 @@ public class MainMenu extends View {
     public MainMenu(MainMenuController controller) {
         this.controller = controller;
     }
-
     public void init() {
         // JavaFX init
         HBox hBox = new HBox();
@@ -30,7 +29,7 @@ public class MainMenu extends View {
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(30);
 
-        ImageView sheepImage = new ImageView(new Image("icon/sheep_icon.png"));
+        ImageView sheepImage = new ImageView(new Image("icon/sheep_Icon.png"));
         sheepImage.setFitHeight(480);
         sheepImage.setFitWidth(470);
         sheepImage.setTranslateX(-80);
@@ -80,8 +79,6 @@ public class MainMenu extends View {
         return super.getScene();
     }
     @Override
-    public void render() {
-
-    }
+    public void render() {}
 
 }

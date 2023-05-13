@@ -19,7 +19,6 @@ import java.util.logging.Logger;
 public class GameModel {
     // Logger
     private static Logger log = Logger.getLogger(Sheep.class.getName());
-
     private static GameModel instance;
     private Sheep player;
     private Location currentLocation;
@@ -80,17 +79,6 @@ public class GameModel {
 
         log.info("The location \"" + currentLocation.getName() + "\" was set.");
     }
-//    public void setLocation(int locationId) {
-//        if (currentLocation != null) {
-//            currentLocation.unsetPlayer();
-//        }
-//
-//        currentLocation = locationManager.getLocation(locationId,false);
-//        currentLocation.init();
-//        currentLocation.setPlayer(player);
-//
-//        log.info("The location \"" + currentLocation.getName() + "\" was set.");
-//    }
     public void setIdOfCurrentLocation(){
         currentLocationId = 0;
     }
@@ -116,7 +104,7 @@ public class GameModel {
     }
 
     public ArrayList<Transition> getPortals() {
-        return currentLocation.getPortals();
+        return currentLocation.getTransitions();
     }
 
 

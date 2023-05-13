@@ -135,14 +135,13 @@ public class Location {
         return items;
     }
 
-    public ArrayList<Transition> getPortals() {
+    public ArrayList<Transition> getTransitions() {
         return transitions;
     }
 
     public TileMap getTileMap() {
         return tileMap;
     }
-
     public SpriteManager getSpriteManager() {
         return spriteManager;
     }

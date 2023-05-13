@@ -15,7 +15,6 @@ public class TileMap {
         this.mapWidth = getWidth() * tileSize;
         this.mapHeight = getHeight() * tileSize;
     }
-
     public int getWidth() {
         return tiles.length;
     }

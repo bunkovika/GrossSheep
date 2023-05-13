@@ -7,7 +7,6 @@ import java.util.Comparator;
 
 public class SpriteManager {
     private final ArrayList<Sprite> sprites;
-
     public SpriteManager() {
         sprites = new ArrayList<>();
     }

@@ -34,9 +34,7 @@ public class Transition extends Sprite {
                 TileMap.convertTileToPixel((int)sheep.getX()/TileMap.getTileSize()),
                 TileMap.convertTileToPixel((int)sheep.getY()/TileMap.getTileSize())
         );
-
     }
-
     public int getId() {
         return portalId;
     }
@@ -44,5 +42,4 @@ public class Transition extends Sprite {
     public void setId(int id) {
         portalId = id;
     }
-
 }

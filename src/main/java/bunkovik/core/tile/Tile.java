@@ -6,7 +6,6 @@ import javafx.scene.image.Image;
 public class Tile {
     private final Image image;
     private final boolean passable;
-
     public Tile(String imagePath, boolean passable) {
         this.passable = passable;
         this.image = new Image(imagePath);

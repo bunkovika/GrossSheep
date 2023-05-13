@@ -13,11 +13,9 @@ public abstract class Item extends Sprite {
         this.id = id;
         this.name = name;
     }
-
     public boolean take(Sheep sheep) {
         return sheep.getInventory().addItem(this);
     }
-
     public int getId() {
         return id;
     }

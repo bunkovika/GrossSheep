@@ -1,8 +1,6 @@
 package bunkovik.model.component;
 
 import java.util.Observable;
-
-
 public class HP extends Observable {
     private double maxHealth;
     private double currentHealth;

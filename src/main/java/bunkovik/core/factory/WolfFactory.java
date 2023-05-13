@@ -30,10 +30,11 @@ public class WolfFactory {
                 images[i] = "wolf/" + id + "/fixedPosition/image" + i + ".png";
             }
             // Creating Wolf
-            Wolf wolf = new Wolf(name, health, damage, damageRadius, viewingRadius, attackSpeed, images);
+            Wolf wolf = new Wolf(id, name, health, damage, damageRadius, viewingRadius, attackSpeed, images);
 
-            return wolf;
+            return  wolf;
         } catch (IOException e) {
+
             e.printStackTrace();
         }
 

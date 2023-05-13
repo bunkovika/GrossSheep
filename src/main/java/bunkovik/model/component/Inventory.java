@@ -1,6 +1,5 @@
 package bunkovik.model.component;
 
-import bunkovik.model.GameModel;
 import bunkovik.model.entity.Item.Item;
 import bunkovik.model.entity.Sheep;
 

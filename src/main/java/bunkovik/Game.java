@@ -14,6 +14,7 @@ public class Game extends Application {
 
     @Override
     public void start(Stage stage) {
+
         // loading main config
         Config.init("config.json");
 
@@ -21,7 +22,7 @@ public class Game extends Application {
         stage.setTitle(Config.getWindowName());
         stage.setResizable(false);
         stage.centerOnScreen();
-        stage.getIcons().add(new Image("icon/sheep_icon.png"));
+        stage.getIcons().add(new Image("icon/sheep_Icon.png"));
 
         // init state manager
         StateManager.init(stage);

@@ -40,7 +40,6 @@ public class InventoryView extends View implements Observer {
     private bunkovik.model.component.Inventory inventory;
     private Sheep sheep;
 
-
     public InventoryView(InventoryController controller) {
         this.controller = controller;
     }
@@ -295,11 +294,8 @@ public class InventoryView extends View implements Observer {
 
         itemInfoContainer.getChildren().add(itemInfo);
     }
-
     @Override
-    public void render() {
-
-    }
+    public void render() {}
 
     @Override
     public void update(Observable o, Object arg) {

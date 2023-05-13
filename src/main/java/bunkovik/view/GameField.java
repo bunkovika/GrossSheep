@@ -74,4 +74,5 @@ public class GameField extends View {
         tileMap.render(gc);
         spriteManager.render(gc);
     }
+//
 }

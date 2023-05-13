@@ -7,6 +7,7 @@ class GameLoop extends AnimationTimer {
 
     @Override
     public void handle(long now) {
+
         double delta = (now - lastNanoTime) / 1000000000.0;
 
         // Frame rate cap
