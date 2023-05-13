@@ -15,6 +15,7 @@ public class Game extends Application {
     @Override
     public void start(Stage stage) {
 
+
         // loading main config
         Config.init("config.json");
 

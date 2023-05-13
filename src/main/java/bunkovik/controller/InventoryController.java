@@ -49,6 +49,7 @@ public class InventoryController extends Controller {
                     ((Food) item).use(sheep);
                 }
             }
+
         }
     }
     @Override

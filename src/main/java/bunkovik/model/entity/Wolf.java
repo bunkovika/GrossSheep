@@ -227,6 +227,7 @@ public class Wolf extends Sprite {
             }else{ lastImageChangeTime = currentTime;}
         }
     }
+
     public void offCombat() {
         inCombat = false;
     }

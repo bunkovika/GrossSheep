@@ -297,6 +297,7 @@ public class InventoryView extends View implements Observer {
     @Override
     public void render() {}
 
+
     @Override
     public void update(Observable o, Object arg) {
         if (o instanceof bunkovik.model.component.Inventory) {

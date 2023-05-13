@@ -20,6 +20,7 @@ public class Config {
             e.printStackTrace();
         }
     }
+
     public static int getWindowWidth() {
         return jo.getInt("windowWidth");
     }

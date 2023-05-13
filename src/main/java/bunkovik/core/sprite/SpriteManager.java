@@ -11,6 +11,7 @@ public class SpriteManager {
         sprites = new ArrayList<>();
     }
 
+
     public void update(double delta) {
         // Sorting to display some sprites on top of others depending on the coordinates.
         sprites.sort(Comparator.comparing(Sprite::getY));

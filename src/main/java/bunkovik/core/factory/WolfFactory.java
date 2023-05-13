@@ -26,6 +26,7 @@ public class WolfFactory {
             double attackSpeed = config.getDouble("attackSpeed");
             String[] images = new String[7];
 
+
             for (int i = 0; i < 7; i++) {
                 images[i] = "wolf/" + id + "/fixedPosition/image" + i + ".png";
             }

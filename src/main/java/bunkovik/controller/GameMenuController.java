@@ -20,6 +20,7 @@ public class GameMenuController extends Controller {
         SheepConfig.savePlayerConfig();
         LocationManager.savedLocation();
     }
+
     public void toMainMenuButtonClickHandler(MouseEvent e) {
         StateManager.goToMainMenu();
     }

@@ -6,6 +6,7 @@ public abstract class View {
 
     protected Controller controller;
 
+
     protected Scene scene;
     public Scene getScene() {
         return scene;

@@ -16,7 +16,8 @@ public class Food extends Item {
 
     public void use(Sheep sheep) {
         sheep.inHealth(this);
-        log.info("Sheep eat food");
+        log.info("Sheep eat food" +
+                "");
     }
 
     public double getHealth() {

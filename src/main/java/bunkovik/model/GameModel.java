@@ -77,6 +77,7 @@ public class GameModel {
         currentLocation.init();
         currentLocation.setPlayer(player);
 
+
         log.info("The location \"" + currentLocation.getName() + "\" was set.");
     }
     public void setIdOfCurrentLocation(){

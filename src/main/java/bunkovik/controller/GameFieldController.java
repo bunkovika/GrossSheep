@@ -45,6 +45,7 @@ public class GameFieldController extends Controller {
         canvasRoot = ((GameField) view).getCanvasRoot();
         spriteManager = gameModel.getSpriteManager();
 
+
         // Setting Up State
         isOpened = true;
     }

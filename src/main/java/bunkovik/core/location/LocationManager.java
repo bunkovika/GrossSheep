@@ -41,6 +41,7 @@ public class LocationManager {
 
         locationConfig.put("name", location.getName());
 
+
         JSONArray monsterArray = new JSONArray();
         for (int i = 0; i < location.getMonsters().size(); i++) {
             JSONObject monsterConfig = new JSONObject();

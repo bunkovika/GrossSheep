@@ -16,6 +16,7 @@ public class GameWinController extends Controller {
         StateManager.goToMainMenu();
     }
 
+
     @Override
     public void tick(double delta) {
         view.render();

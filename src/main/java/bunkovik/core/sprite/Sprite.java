@@ -10,6 +10,7 @@ public abstract class Sprite {
 
     protected double positionX;
 
+
     protected double positionY;
     protected double width;
     protected double height;

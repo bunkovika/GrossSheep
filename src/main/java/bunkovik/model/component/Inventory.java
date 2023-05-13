@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 
 public class Inventory extends Observable {
     // Logger
+
     private static Logger log = Logger.getLogger(Sheep.class.getName());
     private static Inventory instance;
     private int capacity;

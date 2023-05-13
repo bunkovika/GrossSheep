@@ -11,6 +11,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class ItemFactory {
+
+
     public static Item getItem(int id) {
         try {
             File file = new File("src/main/resources/item/" + id + "/config.json");

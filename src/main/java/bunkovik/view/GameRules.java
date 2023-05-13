@@ -27,6 +27,7 @@ public class GameRules extends View{
         scene.setOnKeyPressed(((GameRulesController) controller)::keyPressedHandler);
     }
 
+
     @Override
     public void render() {
 

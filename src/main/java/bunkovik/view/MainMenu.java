@@ -74,6 +74,7 @@ public class MainMenu extends View {
         scene = new Scene(hBox,Config.getWindowWidth(), Config.getWindowHeight());
     }
 
+
     @Override
     public Scene getScene() {
         return super.getScene();

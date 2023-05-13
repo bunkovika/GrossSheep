@@ -11,6 +11,7 @@ public class MainMenuController extends Controller {
         view = new MainMenu(this);
         view.init();
     }
+
     public void gameLoadButtonClickHandler(MouseEvent e) {
         StateManager.startGame(true);
     }

@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 public class TransitionFactory {
     public static Transition getTransition(int id) {
         try {
+
             File file = new File("src/main/resources/transition/" + id + "/config.json");
             String content = new String(Files.readAllBytes(Paths.get(file.toURI())));
             JSONObject config = new JSONObject(content);

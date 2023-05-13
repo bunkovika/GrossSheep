@@ -119,6 +119,7 @@ public class StateManager {
 
         log.info("Game Win.");
     }
+
     public static boolean isIsStarted() {
         return isStarted;
     }

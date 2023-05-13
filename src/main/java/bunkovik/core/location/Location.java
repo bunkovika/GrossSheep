@@ -131,6 +131,7 @@ public class Location {
         return wolves;
     }
 
+
     public ArrayList<Item> getItems() {
         return items;
     }

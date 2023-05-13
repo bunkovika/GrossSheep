@@ -39,6 +39,7 @@ public class Transition extends Sprite {
         return portalId;
     }
 
+
     public void setId(int id) {
         portalId = id;
     }

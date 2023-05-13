@@ -4,6 +4,7 @@ import bunkovik.view.View;
 
 public abstract class Controller {
 
+
     protected View view;
 
     protected boolean isOpened;

@@ -7,6 +7,7 @@ import javafx.scene.image.ImageView;
 
 public class ItemView extends Button {
     private Item itemRef;
+
     public ItemView(InventoryView inventory) {
         super();
 

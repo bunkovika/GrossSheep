@@ -10,6 +10,7 @@ public class Weapon extends Item {
         super(id, name);
         this.damage = damage;
         this.radius = radius;
+
     }
 
     public void equip(Sheep sheep) {

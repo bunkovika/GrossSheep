@@ -5,6 +5,7 @@ import bunkovik.view.GameRules;
 import javafx.scene.input.KeyEvent;
 
 public class GameRulesController extends Controller{
+
     @Override
     public void init() {
         if (isOpened) return;

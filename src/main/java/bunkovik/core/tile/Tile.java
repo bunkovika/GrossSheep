@@ -11,6 +11,7 @@ public class Tile {
         this.image = new Image(imagePath);
     }
 
+
     public Image getImage() {
         return image;
     }

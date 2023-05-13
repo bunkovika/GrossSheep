@@ -20,4 +20,5 @@ public class GameOverController extends Controller {
     public void tick(double delta) {
         view.render();
     }
+
 }
