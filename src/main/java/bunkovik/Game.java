@@ -28,4 +28,5 @@ public class Game extends Application {
         // init state manager
         StateManager.init(stage);
     }
+
 }
