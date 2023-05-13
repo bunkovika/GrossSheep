@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="correction of some bugs with inventory and saved game">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/savedLocation.json" beforeDir="false" afterPath="$PROJECT_DIR$/save/savedLocation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/savedSheepConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/save/savedSheepConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sheepConfig/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/sheepConfig/config.json" afterDir="false" />
-    </list>
+    <list default="true" id="5b9319c8-e6ef-4396-a91a-5fff0ad9bdd4" name="Changes" comment="Update of the whole game" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,7 +225,7 @@
       <workItem from="1683981695150" duration="31000" />
       <workItem from="1683981935935" duration="1227000" />
       <workItem from="1683987512175" duration="14000" />
-      <workItem from="1683992000135" duration="792000" />
+      <workItem from="1683992000135" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the classes">
       <created>1679948855057</created>
@@ -442,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683982495047</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Update of the whole game">
+      <created>1683993658942</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1683993658942</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test2" />
     <MESSAGE value="create classes" />
     <MESSAGE value="create new classes" />
     <MESSAGE value="creating of the main menu( image + buttons)" />
@@ -497,7 +498,8 @@
     <MESSAGE value="beta version of the project" />
     <MESSAGE value="adding save config" />
     <MESSAGE value="correction of some bugs with inventory and saved game" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction of some bugs with inventory and saved game" />
+    <MESSAGE value="Update of the whole game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update of the whole game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
