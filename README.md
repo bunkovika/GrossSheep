@@ -1,6 +1,6 @@
 # Gross Sheep - Java Game
 
-<img src="uploads/ab7bb81f74698c167bf0cde2dcc662f5/meeee.png" alt="meeee" width="300" height="300">
+<img src="https://github.com/user-attachments/assets/feb9cb84-c101-4b99-9ce7-50ddaee70c90" alt="meeee" width="300" height="300">
 
 # Téma projektu:
 
@@ -24,25 +24,27 @@ do kódu zadáním konfigurace.
 # Main Menu
 Jakmile uživatel spustí aplikaci, zobrazí se hlavní nabídka.
 
-![image](uploads/6c6b383abe44ea57c8af1f2dd0e3c529/image.png)
+<img width="500" alt="2" src="https://github.com/user-attachments/assets/7f8193bf-ba4e-46eb-9496-a3ed79f4caf7" />
 
 # Game Field 
 
 Když hráč otevře hru, může vidět pole hry s HP boxem.
 
-![image](uploads/185d705ae563ec8c020620ecc499edb4/image.png)
+<img width="500" alt="3" src="https://github.com/user-attachments/assets/22a0873e-6eb5-4b74-a586-7a62f0286012" />
+
 
 # Game Menu
 
 Když hráč hraje hru a chce otevřít menu, může kliknout na "ESCAPE" a objeví se hlavní menu.V nabídce GameMenu může hráč pokračovat ve hře, uložit hru nebo přečíst si pravidla hry.
 
-![image](uploads/41f024d0b236bcd3b66a6ed083031619/image.png)
+<img width="500" alt="4" src="https://github.com/user-attachments/assets/f4ec4b18-fa01-48cb-981c-7958b55ab40c" />
+
 
 # Game Rules
 
 Hráč může otevřít pravidla hry v menu hry nebo v hlavním menu.
 Chcete-li zavřít pravidla hry, hráč by měl kliknout na "ESC".
-![image](uploads/d6cb930728aa53235399bd66d0c88180/image.png)
+
 
 # Inventory
 
