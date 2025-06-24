@@ -45,6 +45,8 @@ Když hráč hraje hru a chce otevřít menu, může kliknout na "ESCAPE" a obje
 Hráč může otevřít pravidla hry v menu hry nebo v hlavním menu.
 Chcete-li zavřít pravidla hry, hráč by měl kliknout na "ESC".
 
+<img width="500" alt="5" src="https://github.com/user-attachments/assets/e144ec83-b9b0-4b43-b15c-ef444f321930" />
+
 
 # Inventory
 
@@ -52,25 +54,29 @@ Když hráč hraje hru a chce otevřít inventory, může kliknout na "I" a obje
 Se vstupem "E" si hráč může předmět typu (weapon) vzít a poté, když hráč zadá klávesu "SPACE", může jej spotřebovat. Například si může vzít maso kliknutím na „E“ a zabít vlka kliknutím na „SPACE“.
 Se vstupem "C" si hráč může předmět typu (food) spotřebovat a mů se přida HP.
 
-![image](uploads/91a5954f5cedf2b6c719971ae7cdbadc/image.png)
+<img width="500" alt="6" src="https://github.com/user-attachments/assets/68c6d9f7-02df-4651-ab16-1667721d41ae" />
+
 
 # End game
 
 Pokud ovce zemře, hra začne znovu
 
-![image](uploads/7b9103468f201fa2738d294fb31c27ac/image.png)
+<img width="500" alt="7" src="https://github.com/user-attachments/assets/1b8c211d-185f-43e7-932b-e51ccfbaa7f5" />
+
 
 # Win game
 
 Pokud ovečka vyhraje, otevře se okno:
 
-![image](uploads/3375802c6ad723a523b499b2d98cd009/image.png)
+<img width="500" alt="8" src="https://github.com/user-attachments/assets/25f2e0a3-111d-453d-a37a-42fc8d71f5e7" />
+
 
 # Technický popis:
 
 
 # Kostry hlavních tříd
-![package](uploads/ce373cad6d933b32bb0d93e3d50c4d70/package.png)
+
+![9](https://github.com/user-attachments/assets/37aa5229-0fac-476e-9f45-ec61783fdeaf)
 
 
 # Projekt je navržen pomocí paternu MVC:
